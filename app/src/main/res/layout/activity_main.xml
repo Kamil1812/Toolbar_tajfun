@@ -11,16 +11,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
+        android:backgroundTint="#4CAF50"
+        android:gravity="center_vertical"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_vertical"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:backgroundTint="#4CAF50"
         android:gravity="center_vertical"
         tools:ignore="MissingConstraints">
 
@@ -28,8 +30,8 @@
             android:id="@+id/button_hamburger_menu"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/hamburger_menu_icon"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:src="@drawable/hamburger_menu_icon" />
 
         <TextView
             android:id="@+id/Textview_Toolbar_text"
@@ -41,10 +43,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="20dp"
-            android:text="@string/Textview_przykładowa_nazwa_uzytkownika"
             android:fontFamily="sans-serif"
-            android:textSize="18sp"
-            android:textColor="@color/white"/>
+            android:text="@string/Textview_przykładowa_nazwa_uzytkownika"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
     </RelativeLayout>
 
 
@@ -53,15 +55,15 @@
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        tools:ignore="MissingConstraints"
         android:animateLayoutChanges="true"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:gravity="center_horizontal|center_vertical">
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="175dp"
@@ -71,16 +73,16 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="65dp"
                     android:layout_height="65dp"
+                    android:layout_marginEnd="10dp"
                     app:cardCornerRadius="50dp"
-                    app:cardElevation="0dp"
-                    android:layout_marginEnd="10dp">
+                    app:cardElevation="0dp">
 
                     <ImageView
                         android:id="@+id/ImageView_nav_user_image"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        android:src="@drawable/example_user_icon"
-                        android:layout_gravity="center_vertical" />
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/example_user_icon" />
                 </androidx.cardview.widget.CardView>
 
                 <LinearLayout
@@ -112,27 +114,27 @@
 
         <Button
             android:id="@+id/Button_nav_homepage"
-            android:text="@string/Przycisk_strona_glowna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="100dp"
-            android:layout_marginHorizontal="10dp"/>
+            android:text="@string/Przycisk_strona_glowna" />
 
         <Button
             android:id="@+id/Button_nav_marks"
-            android:text="@string/Przycisk_oceny"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="150dp"
-            android:layout_marginHorizontal="10dp"/>
+            android:text="@string/Przycisk_oceny" />
 
         <Button
             android:id="@+id/Button_nav_user_info"
-            android:text="@string/Przycisk_informacje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="200dp"
-            android:layout_marginHorizontal="10dp"/>
+            android:text="@string/Przycisk_informacje" />
 
         <Button
             android:id="@+id/Button_nav_close"
@@ -168,53 +170,33 @@
             android:scaleX="1.2"
             android:scaleY="1.2">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Textview_nick"/>
             <EditText
                 android:id="@+id/Input_nick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="nick"
                 android:inputType="textPersonName" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Textview_imie"/>
             <EditText
                 android:id="@+id/Input_imie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="imie"
                 android:inputType="textPersonName" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Textview_nazwisko"/>
             <EditText
                 android:id="@+id/Input_nazwisko"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="nazwisko"
                 android:inputType="textPersonName" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Textview_klasa"/>
-            <EditText
-                android:id="@+id/Input_klasa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName" />
             <Button
                 android:id="@+id/Button_login"
                 android:layout_width="match_parent"
