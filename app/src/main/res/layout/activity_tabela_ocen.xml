@@ -21,6 +21,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:background="#4CAF50"
         android:gravity="center_vertical"
         tools:ignore="MissingConstraints">
 
@@ -28,8 +29,8 @@
             android:id="@+id/button_hamburger_menu"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/hamburger_menu_icon"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:src="@drawable/hamburger_menu_icon" />
 
         <TextView
             android:id="@+id/Textview_Toolbar_text"
@@ -41,10 +42,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="20dp"
-            android:text="@string/Textview_przykładowa_nazwa_uzytkownika"
             android:fontFamily="sans-serif"
-            android:textSize="18sp"
-            android:textColor="@color/white"/>
+            android:text="@string/Textview_przykładowa_nazwa_uzytkownika"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
     </RelativeLayout>
 
 
@@ -154,54 +155,118 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow android:background="#054a91" android:padding="5dp">
+        <TableRow
+            android:background="#4CAF50"
+            android:padding="5dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:text="Przedmiot"
-                android:textColor="@color/white"/>
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:text="Ocena"
-                android:textColor="@color/white"/>
+                android:textAlignment="center"
+                android:textColor="@color/white" />
         </TableRow>
-        <TableRow android:background="#3e7cb1" android:padding="5dp">
+
+        <TableRow
+            android:background="#009688"
+            android:padding="5dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:text="WF"
-                android:textColor="@color/white"/>
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:text="5"
-                android:textColor="@color/white"/>
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
         </TableRow>
-        <TableRow android:background="#81a4cd" android:padding="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#009688"
+            android:padding="5dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:text="Matematyka"
-                android:textColor="@color/white"/>
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="1+"
                 android:textAlignment="center"
-                android:text="1-"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#009688"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="J. Niemiecki"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3-"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#009688"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="J. Polski"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
         </TableRow>
     </TableLayout>
