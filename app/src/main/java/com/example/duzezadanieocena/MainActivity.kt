@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             val imie = findViewById<EditText>(R.id.Input_imie).text.toString()
             val nazwisko = findViewById<EditText>(R.id.Input_nazwisko).text.toString()
 
-            if (nick != "" || imie != "" || nazwisko != "")
+            if (nick == "" || imie == "" || nazwisko == "")
             {
                 Toast.makeText(this, "Wypełnij wszystkie pola!", Toast.LENGTH_SHORT).show()
             }
