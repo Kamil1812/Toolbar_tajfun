@@ -80,7 +80,16 @@ class MainActivity : AppCompatActivity() {
             val imie = findViewById<EditText>(R.id.Input_imie).text.toString()
             val nazwisko = findViewById<EditText>(R.id.Input_nazwisko).text.toString()
 
-            if (nick != "" && imie != "" && nazwisko != ""){
+            if (nick != "" || imie != "" || nazwisko != "")
+            {
+                Toast.makeText(this, "Wypełnij wszystkie pola!", Toast.LENGTH_SHORT).show()
+            }
+            else if(nick != "Kamil" && nazwisko != "Niewiadomski")
+            {
+                Toast.makeText(this, "Zle dane logowania!", Toast.LENGTH_SHORT).show()
+            }
+            else
+            {
                 User_Data[0] = nick
                 User_Data[1] = imie
                 User_Data[2] = nazwisko
@@ -90,8 +99,6 @@ class MainActivity : AppCompatActivity() {
                 findViewById<LinearLayout>(R.id.Login_Form).visibility = View.GONE
                 findViewById<TextView>(R.id.Textview_form_text).visibility = View.VISIBLE
                 RefreshUserUIElements(User_Data)
-            }else{
-                Toast.makeText(this, "Wypełnij wszystkie pola!", Toast.LENGTH_SHORT).show()
             }
         }
     }
