@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var logged = false
-        var User_Data = arrayOf("", "", "", "") // tablica danych uzytkownika
+        var User_Data = arrayOf("", "", "") // tablica danych uzytkownika
 
         val data = intent.getStringArrayExtra("userinfo")
         if (data != null) {
@@ -79,13 +79,11 @@ class MainActivity : AppCompatActivity() {
             val nick = findViewById<EditText>(R.id.Input_nick).text.toString()
             val imie = findViewById<EditText>(R.id.Input_imie).text.toString()
             val nazwisko = findViewById<EditText>(R.id.Input_nazwisko).text.toString()
-            val klasa = findViewById<EditText>(R.id.Input_klasa).text.toString()
 
-            if (nick != "" && imie != "" && nazwisko != "" && klasa != ""){
+            if (nick != "" && imie != "" && nazwisko != ""){
                 User_Data[0] = nick
                 User_Data[1] = imie
                 User_Data[2] = nazwisko
-                User_Data[3] = klasa
 
                 logged = true
 
